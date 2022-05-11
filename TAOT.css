@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap') screen and (orientation:landscape);
+
+/*@font-face {
+    font-family: "Uchen-Regular";
+        src: url('website/Fonts/Uchen-Regular.ttf') format('truetypef');
+        font-style: normal;
+        font-weight: normal;
+    }
+    
+    p {
+        font-family: "Uchen-Regular";
+    }
+}*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    user-select: none ;
+}
+
+
+/* @ font-face needs media query would rather embed these 4 google fonts: Roboto, Monsterrat, Lato, Open Sans*/
+
+.TAOTLargeText {
+    font-size: 25px;
+}
+
+.TAOTMediumText {
+    font-size: 15px;
+}
+
+.TAOTSmallText {
+    font-size: 10px;
+}
+
+.TAOTCenterHorizontally {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.TAOTCenterVertically {
+    margin: auto;
+    height: 50%;
+    padding: 10px;
+}
+
+.TAOTCenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.TAOTCenterDiv {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+.TAOTPaddingFull {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.TAOTMediumDivHeight {
+    height: 150px;
+}
+
+.TAOTSideNav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1c2234;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.TAOTSideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.TAOTSideNav a:hover {
+    color: #f1f1f1;
+}
+
+.TAOTSideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.TAOTFooter {
+    position: fixed;
+}
+
+.TAOTContactInput [type=text],
+select,
+textarea {
+    width: fit-content 100%;
+    padding: 12px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.TAOTContactInput [type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main {
+    transition: all .5s ease-out;
+    position: relative;
+    left: 0;
+}
+
+aside .card {
+    background: transparent !important;
+    transition: .5s;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: .55rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+
+span .ham {
+    color: #fff !important;
+    position: absolute;
+    left: 0!important;
+}
+.reg_button{
+    margin: 0px 20px;
+}
+.toggle_bottom{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+}
+.user{
+    background-image: url(/Images/user.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height:40px
+}
+.notification{
+    background-image: url(/Images/notification.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+   
+}
+.mail{
+    background-image: url(/Images/send.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+     margin: 0px 15px;
+}
+.icons_button{
+    background-color: transparent;
+    border: none;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+}
+@media screen and (max-height: 450px) {
+    .TAOTSideNav {
+        padding-top: 15px;
+    }
+    .TAOTSideNav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Generic styling */
+
+* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.ft-title {
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+
+/* Sticks footer to bottom */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+
+/* Footer main */
+
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 29.8125rem
+/* 477px */
+
+) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 77.5rem
+/* 1240px */
+
+) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+}
+
+
+/* Footer main | Newsletter form */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+
+input[type="submit"] {
+    background-color: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+
+/* Footer social */
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+
+/* Footer legal */
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: pre-line;
+}
+
+
+/* one before the last child */
+
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+
+.modal {
+    border-radius: 15%;
+}
+.modal-header {
+    background-color: #555;
+}
+
+.input-group-text {
+    background-color: #818181;
+}
+
+/* Social Media Icons */
+
+.TAOT-facebook {
+    color: #1877f2;
+}
+
+.TAOT-github {
+    color: #171515;
+}
+
+.TAOT-youtube {
+    color: #ff0000;
+}
+
+.TAOT-discord {
+    color: #5865f2;
+}
+
+.TAOT-reddit {
+    color: #ff4500;
+}
+
+.ft-social-list li a :hover {
+    color: #fff;
+}
+
+.text-white{
+    color: #fff;
+}
+
+.bg-transparent{
+    background-color: transparent !important;
+}
+
+.TAOT-authmsg {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.TAOT-authmsg .success {
+    color: green;
+}
+
+.TAOT-authmsg .error {
+    color: red;
+}
+
+.modal #agreeBox{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#cmdRegister{
+    float: right;
+}
+
+.footer-alt{
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+    color:#5a5a5a;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+
+.footer-alt a{
+    text-decoration: none;
+}
+
+/* for Breadcrumbs */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
