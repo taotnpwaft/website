@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <script crossorigin="anonymous" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script crossorigin="anonymous"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link crossorigin="anonymous" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link crossorigin="anonymous" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <link rel="stylesheet" href="/website/styles/TAOT.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="hint-text">Contact Us</h1>
+        <p class="hint-text">We'd love to hear from you, please drop us a line if you would like to hear from us.
+        </p>
+        <form action="/examples/actions/confirmation.php" method="post">
+
+            <div class="form-grid">
+                <div>
+                    <label for="inputName">First Name</label>
+                    <input type="text" class="form-control" id="inputName" required maxlength="35">
+                </div>
+                <div>
+                    <label for="inputSurname">Last Name</label>
+                    <input type="text" class="form-control" id="inputSurname" required maxlength="35">
+                </div>
+            </div>
+            <div class="form-grid">
+                <div>
+                    <label for="inputSubject">Subject</label>
+                    <input type="text" class="form-control" id="inputSubject" required maxlength="30">
+                </div>
+                <div>
+                    <label for="inputEmail">Email Address</label>
+                    <input type="email" class="form-control" id="inputEmail" required maxlength="60">
+                </div>
+            </div>
+            <div class="form-grid">
+                <div>
+                    <label for="inputPhone">Phone</label>
+                    <input type="text" class="form-control" id="inputPhone" required maxlength="50">
+                </div>
+                <div>
+                    <label for="inputWebsite">Website</label>
+                    <input type="text" class="form-control" id="inputWebsite" required maxlength="50">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="5" required maxlength="300"></textarea>
+            </div>
+            <div class="form-grid">
+                <div class="msg">
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-paper-plane"></i> Send
+                        Message</button>
+                </div>
+                <div class="cancel">
+                    <button type="button" id="submit" name="submit" class="btn btn-secondary" value="1">Cancel</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
