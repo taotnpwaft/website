@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003
+            },
+            {
+                "name": "Launch index.html",
+                "type": "firefox",
+                "request": "launch",
+                "reAttach": true,
+                "file": "${workspaceFolder}/index.html"
+            },
+            {
+                "name": "Launch localhost",
+                "type": "firefox",
+                "request": "launch",
+                "reAttach": true,
+                "url": "http://localhost/index.html",
+                "webRoot": "${workspaceFolder}"
+            },
+            {
+                "name": "Attach",
+                "type": "firefox",
+                "request": "attach"
+            },
+            {
+                "name": "Launch WebExtension",
+                "type": "firefox",
+                "request": "launch",
+                "reAttach": true,
+                "addonPath": "${workspaceFolder}"
+        },
+    ]
+}

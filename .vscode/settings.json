@@ -1,0 +1,83 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true
+  },
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.options": {
+    "rules": {
+      "import/default": "error",
+      "import/export": "error",
+      "import/named": "error",
+      "import/namespace": "error",
+      "import/no-duplicates": "error",
+      "import/no-named-as-default": "error",
+      "import/no-named-as-default-member": "error",
+      "import/no-unresolved": "error"
+    }
+  },
+  "javascript.format.enable": false,
+  "window.zoomLevel": 3,
+  "editor.tabSize": 2,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "editor.formatOnSave": true,
+  "workbench.tree.indent": 20,
+  "explorer.openEditors.visible": 0,
+  "explorer.decorations.badges": false,
+  "breadcrumbs.enabled": false,
+  "vsicons.presets.hideExplorerArrows": true,
+  "files.eol": "\n",
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.1,
+  "liveServer.settings.port": 5502,
+
+    "githubPullRequests.remotes": [
+        "origin",
+        "upstream",
+        "main",
+        "master"
+    ],
+
+    "html.suggest.html5": true,
+    "editor.linkedEditing": true,
+    "html.validate.scripts": true,
+    "html.format.wrapLineLength": 120,
+    "html.format.unformatted": "wbr",
+    "html.format.contentUnformatted": "pre,code,textarea",
+    "html.format.extraLiners": "head, body, /html",
+    "html.format.preserveNewLines": true,
+    "html.format.maxPreserveNewLines": null,
+    "html.format.endWithNewline": false,
+    "html.format.indentInnerHtml": true,
+    "html.format.wrapAttributes": "auto",
+    "html.format.wrapAttributesIndentSize": null,
+    "html.format.templating": false,
+    "html.format.unformattedContentDelimiter": "",
+    "html.autoClosingTags": true,
+    "[html]": {
+        "editor.suggest.insertMode": "replace"
+    },
+  "git.scanRepositories": [
+    "https.www.github.com/gbowne1/taot.git"
+  ],
+  "html.format.indentHandlebars": true,
+  "sqltools.connections": [
+    {
+        "mysqlOptions": {
+            "authProtocol": "default"
+        },
+        "previewLimit": 50,
+        "server": "64.20.44.202",
+        "port": 3306,
+        "askForPassword": true,
+        "driver": "MySQL",
+        "username": "radio_admin",
+        "name": "TAOT",
+        "database": "radiologger",
+        "connectionTimeout": 30
+    }
+  ]
+}
