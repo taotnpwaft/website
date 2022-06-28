@@ -22,6 +22,24 @@
         "cweijan.vscode-mysql-client2",
         "ZainChen.json",
         "mohsen1.prettify-json",
-        "firefox-devtools.vscode-firefox-debug"
+        "firefox-devtools.vscode-firefox-debug",,
+        "dbaeumer.jshint",
+        "donjayamanne.jquerysnippets",
+        "MehediDracula.php-namespace-resolver",
+        "Sophisticode.php-formatter",
+        "brapifra.phpserver",
+        "formulahendry.code-runner",
+        "abusaidm.html-snippets",
+        "sidthesloth.html5-boilerplate",
+        "hdg.live-html-previewer",
+        "lonefy.vscode-JS-CSS-HTML-formatter",
+        "aeschli.vscode-css-formatter",
+        "rvest.vs-code-prettier-eslint",
+        "anseki.vscode-color",
+        "stylelint.vscode-stylelint",
+        "Balasubramanian.ajax-query",
+        "ikappas.phpcs",
+        "formulahendry.vscode-mysql",
+        "cweijan.vscode-mysql-client2"
 	]
 }
