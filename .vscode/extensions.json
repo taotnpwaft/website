@@ -22,6 +22,22 @@
         "cweijan.vscode-mysql-client2",
         "ZainChen.json",
         "mohsen1.prettify-json",
-        "firefox-devtools.vscode-firefox-debug"
+        "firefox-devtools.vscode-firefox-debug",
+		"MS-vsliveshare.vsliveshare",
+		"MS-vsliveshare.vsliveshare-audio",
+		"ms-vscode.test-adapter-converter",
+		"abusaidm.html-snippets",
+		"GitHub.vscode-pull-request-github",
+        "streetsidesoftware.code-spell-checker",
+        "tht13.html-preview-vscode",
+        "MS-vsliveshare.vsliveshare-pack",
+        "dbaeumer.jshint",
+        "mgmcdermott.vscode-language-babel",
+        "donjayamanne.jquerysnippets",
+        "ikappas.phpcs",
+        "ms-vscode.vscode-typescript-next",
+        "Orta.vscode-jest",
+        "sidthesloth.html5-boilerplate",
+        "ms-vscode-remote.vscode-remote-extensionpack"
 	]
 }
