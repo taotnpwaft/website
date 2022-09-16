@@ -40,10 +40,22 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://www.gstatic.com">
     <link rel="dns-prefetch" href="https://apis.google.com">
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com" />
+    <link rel="dns-prefetch" href="https://apis.google.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://google-analytics.com" />
+    <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+    <link rel="dns-prefetch" href="https://ssl.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.google.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://google-analytics.com" crossorigin="">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="http://www.google.com">
+    <link rel="preconnect" href="https://www.google.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -66,7 +78,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" integrity="sha512-Mqfoc3Z3HrXDAkb9KWQklaedI9QNM01mqRaruK/LWtT3JU6BuxnbHg0MTqowzr2P8/Xdd0ITR0po3A4R5T0h2w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" type="text/css" href="styles/TAOT.css">
     <!-- dark theme -->
-    <link rel="stylesheet" type="text/css" href="TAOTtheme.css">
+    <link rel="stylesheet" type="text/css" href="styles/TAOTtheme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
     </script>
     <!-- Google Tag Manager -->
@@ -91,7 +103,7 @@
 </head>
 
 <body class="dark-theme || light-theme">
-<?php include('./components/header.php');?>
+<?php include ('./components/header.php');?>
 
     <!-- #page-content-wrapper -->
     <main>
@@ -123,7 +135,7 @@
         </div>
     </main>
     <!-- /#page-content-wrapper -->
-<?php include('./components/footer.php');?>
+<?php include ('./components/footer.php');?>
     <!--Modal Register Form-->
     <div class="modal" id="FormRegisterModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -160,10 +172,10 @@
                     <button type="button" id="cmdRegister" class="btn btn-primary" disabled>Register</button>
                 </div>
                 <div class="footer-alt">
-                    
+
                     <span>Already have an account?</span>
                     <a href="#" onclick="showLogin()"> Login</a>
-               
+
                 </div>
             </div>
         </div>
@@ -215,7 +227,7 @@
             InitialiseLoginGrid();
         });
     </script>
-    
+
     <script>
         window.dataLayer = window.dataLayer || [];
 

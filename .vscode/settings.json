@@ -1,71 +1,61 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true
-  },
-  "javascript.format.enable": false,
-  "editor.tabSize": 2,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
-  "editor.formatOnSave": true,
-  "workbench.tree.indent": 20,
-  "explorer.openEditors.visible": 0,
-  "explorer.decorations.badges": false,
-  "breadcrumbs.enabled": false,
-  "files.eol": "\n",
-  "explorer.confirmDragAndDrop": false,
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.lineHeight": 1.1,
-    "githubPullRequests.remotes": [
-        "origin",
-        "upstream",
-        "main",
-        "master"
-    ],
-  "html.suggest.html5": true,
-  "editor.linkedEditing": true,
-  "html.validate.scripts": true,
-  "html.format.wrapLineLength": 120,
-  "html.format.unformatted": "wbr",
-  "html.format.contentUnformatted": "pre,code,textarea",
-  "html.format.extraLiners": "head, body, /html",
-  "html.format.preserveNewLines": true,
-  "html.format.maxPreserveNewLines": null,
-  "html.format.endWithNewline": false,
-  "html.format.indentInnerHtml": true,
-  "html.format.wrapAttributes": "auto",
-  "html.format.wrapAttributesIndentSize": null,
-  "html.format.templating": false,
-  "html.format.unformattedContentDelimiter": "",
-  "html.autoClosingTags": true,
-  "[html]": {
-      "editor.suggest.insertMode": "replace"
-  },
-  "html.format.indentHandlebars": true,
-  "editor.fontSize": 15,
-  "files.autoSave": "afterDelay",
-  "editor.wordWrap": "on",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "editor.minimap.enabled": false,
-  "prettier.jsxSingleQuote": true,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnPaste": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.cursorBlinking": "expand",
-  "prettier.requireConfig": true,
-  "editor.formatOnType": true,
-  "html.format.enable": false,
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.quickSuggestions": {
+      "strings": true,
+      "comments": "on",
+    },
+    "editor.defaultFormatter": "ZainChen.json",
+    "editor.suggest.insertMode": "replace"
   },
-  "emmet.triggerExpansionOnTab": true,
+  "[html]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[css]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "vscode.css-language-features",
+  },
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "cSpell.fixSpellingWithRenameProvider": true,
+    "cSpell.advanced.feature.useReferenceProviderWithRename": true,
+    "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/",
+    "editor.defaultFormatter": "vscode.markdown-language-features",
+  },
+  "[php]": {
+    "cSpell.fixSpellingWithRenameProvider": false,
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+  },
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+
+  "php.validate.executablePath": "/usr/bin/php",
+  "liveServer.settings.port": 5502
 }
