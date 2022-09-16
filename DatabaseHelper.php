@@ -206,7 +206,7 @@ function CheckEmail($email): bool
 
 /*------------------------------------------------------------
  * Name:          REQUEST_METHOD to Check UserName
- * Purpose:       Check if username exists in database 
+ * Purpose:       Check if username exists in database
  * Args:          username
  * Returns:       Return JSON Message
  * Date Created:  22 April 2022
@@ -225,7 +225,7 @@ if (isset($_POST['checkUserName'])) {
 
 /*------------------------------------------------------------
  * Name:          REQUEST_METHOD to Check Email
- * Purpose:        Check if email exists in database 
+ * Purpose:        Check if email exists in database
  * Args:          username
  * Returns:       Return JSON Message
  * Date Created:  22 April 2022
