@@ -63,7 +63,7 @@
             <ul class="ft-legal-list">
                 <li><a href="#">Terms &amp; Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-                <li class="text-center">&copy; 2021 by The Art of Tech: Not Playing with a Full Tech, LLC</li>
+                <li class="text-center">&copy; 202 by The Art of Tech: Not Playing with a Full Tech, LLC</li>
             </ul>
         </section>
     </footer>
